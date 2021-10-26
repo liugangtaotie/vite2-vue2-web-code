@@ -1,0 +1,65 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "target": "esnext",
+    "module": "esnext",
+    "strict": true,
+    "jsx": "preserve",
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "types": [
+      "webpack-env"
+    ],
+    "paths": {
+      "@/*": [
+        "src/*"
+      ],
+      "@STA/*": [
+        "static/*"
+      ],
+      "@API/*": [
+        "src/api/*"
+      ],
+      "@ASS/*": [
+        "src/assets/*"
+      ],
+      "@POM/*": [
+        "src/pubcom/*"
+      ],
+      "@COM/*": [
+        "src/components/*"
+      ],
+      "@THR/*": [
+        "src/third/*"
+      ],
+      "@VIE/*": [
+        "src/views/*"
+      ],
+    },
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable",
+      "scripthost"
+    ]
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "tests/**/*.ts",
+    "tests/**/*.tsx",
+    "src/api/WebIM.js"
+  ],
+  "exclude": [
+    "node_modules",
+    "src/main.ts",
+    "static",
+    "src/api/WebIM.js",
+  ]
+}

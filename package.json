@@ -1,0 +1,143 @@
+{
+  "name": "vite2-vue2-web-code",
+  "version": "1.0.0",
+  "description": "公共web模板",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve-vite": "vite preview",
+    "serve": "node --max_old_space_size=4096 node_modules/@vue/cli-service/bin/vue-cli-service.js serve --open",
+    "build:dll": "webpack --config  build/webpack.dll.conf.js",
+    "svg": "vsvg -s ./src/icons/svg -t ./src/icons/components --ext ts --es6",
+    "analyz": "NODE_ENV=production npm_config_report=true npm run build",
+    "autofix": "eslint --fix --ext .js,.vue,.ts src",
+    "stylelint": "stylelint src/**/**/**/**/*.{html,vue,css,sass,scss} --fix"
+  },
+  "dependencies": {
+    "@antv/g2": "^4.0.12",
+    "@types/echarts": "^4.6.3",
+    "async-validator": "^3.3.0",
+    "axios": "^0.19.2",
+    "babel-polyfill": "^6.26.0",
+    "core-js": "^3.6.4",
+    "crypto-es": "^1.2.7",
+    "css-loader": "^3.6.0",
+    "echarts": "^4.8.0",
+    "element-ui": "^2.15.0",
+    "http-proxy": "^1.18.1",
+    "http-server": "^0.12.3",
+    "md5": "^2.2.1",
+    "moment": "^2.29.1",
+    "net": "^1.0.2",
+    "nprogress": "^0.2.0",
+    "qr-image": "^3.2.0",
+    "qrcode": "^1.4.4",
+    "qrcode.vue": "^1.7.0",
+    "v-viewer": "^1.5.1",
+    "vue": "^2.6.11",
+    "vue-class-component": "^7.2.3",
+    "vue-monoplasty-slide-verify": "^1.1.3",
+    "vue-property-decorator": "^9.0.0",
+    "vue-router": "^3.3.4",
+    "vue-svgicon": "^3.2.9",
+    "vuex": "^3.5.1",
+    "vuex-module-decorators": "^1.0.1",
+    "yorkie": "^2.0.0"
+  },
+  "devDependencies": {
+    "@riophae/vue-treeselect": "^0.4.0",
+    "@types/js-cookie": "^2.2.6",
+    "@types/node": "^14.0.22",
+    "@types/nprogress": "^0.2.0",
+    "@typescript-eslint/eslint-plugin": "^3.6.0",
+    "@typescript-eslint/parser": "^3.6.0",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "@vue/eslint-config-typescript": "^5.0.2",
+    "autoprefixer": "^9.8.5",
+    "babel-plugin-component": "^1.1.1",
+    "chalk": "^4.1.0",
+    "crypto-js": "^4.0.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-vue": "^6.2.2",
+    "eventsource-polyfill": "^0.9.6",
+    "file-loader": "^6.0.0",
+    "gm-crypt": "^0.0.2",
+    "html-loader": "0.5.5",
+    "js-cookie": "^2.2.1",
+    "less": "^3.11.3",
+    "lint-staged": "^10.2.11",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-notifier": "^7.0.1",
+    "ora": "^4.0.4",
+    "os": "^0.1.1",
+    "path-to-regexp": "^6.2.0",
+    "portfinder": "^1.0.26",
+    "postcss-loader": "^3.0.0",
+    "prettier": "^1.19.1",
+    "register-service-worker": "^1.7.1",
+    "rimraf": "^3.0.2",
+    "rollup-plugin-copy": "^3.4.0",
+    "sass": "^1.32.12",
+    "semver": "^7.3.2",
+    "shelljs": "^0.8.4",
+    "sm-crypto": "^0.2.7",
+    "stylelint": "^13.6.1",
+    "stylelint-config-recess-order": "^2.0.4",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-prettier": "^1.1.2",
+    "stylelint-scss": "^3.18.0",
+    "typescript": "^3.9.6",
+    "underscore": "^1.13.1",
+    "url-loader": "^4.1.0",
+    "vite": "2.2.4",
+    "vite-plugin-html": "^2.0.7",
+    "vite-plugin-imagemin": "^0.3.0",
+    "vite-plugin-style-import": "^0.10.0",
+    "vite-plugin-svg-icons": "^0.5.0",
+    "vite-plugin-vue-jsx": "^0.0.4",
+    "vite-plugin-vue2": "^1.4.4",
+    "vite-tsconfig-paths": "3.3.10",
+    "vue-photo-preview": "^1.1.3",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "@vue/typescript/recommended",
+      "@vue/prettier",
+      "@vue/prettier/@typescript-eslint"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 2020
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "keywords": [
+    "vue",
+    "typescript",
+    "admin",
+    "template",
+    "element-ui"
+  ],
+  "lint-staged": {
+    "*.{js,ts,vue}": [
+      "yarn autofix"
+    ],
+    "*.{html,vue,css,sass,scss}": [
+      "yarn stylelint"
+    ]
+  }
+}

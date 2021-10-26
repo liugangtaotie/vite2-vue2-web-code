@@ -1,0 +1,332 @@
+[
+  {
+    "questionid": "4385125b-dd1e-3025-880f-3311517cc8d5",
+    "question": "1、您能的进食能力如何？",
+    "answers": [
+      {
+        "choiceid": "0fb26833-a9c2-3115-ad21-a082e21213f3",
+        "choice": "可独立用合适的餐具将食物由容器送到口中，包括用筷子（勺子或叉子）取食物、对碗（碟）的把持、咀嚼、吞咽等过程。",
+        "mark": 10.0
+      },
+      {
+        "choiceid": "503d4c60-3ff0-3d2b-9ea0-6fb5b0078031",
+        "choice": "需部分帮助。",
+        "mark": 5.0
+      },
+      {
+        "choiceid": "81cac15d-01d5-3d51-8bde-0f7a383585ae",
+        "choice": "需极大帮助或完全依赖他人，或留置胃管。",
+        "mark": 0.0
+      }
+    ]
+  },
+  {
+    "questionid": "15e0ba07-10e4-3d7f-aaff-c00fed873c88",
+    "question": "2、您能否独立完成洗澡吗？",
+    "answers": [
+      {
+        "choiceid": "ce09d866-a134-35a8-88b8-e4f08b21af3a",
+        "choice": "准备好洗澡水后，可自己独立完成洗澡过程。",
+        "mark": 5.0
+      },
+      {
+        "choiceid": "8fbf5119-bbdd-3a19-aa0d-c569bd2e3b9f",
+        "choice": "在洗澡过程中需他人帮助。",
+        "mark": 0.0
+      }
+    ]
+  },
+  {
+    "questionid": "7586bfed-b8b8-3bb3-9c95-09a4a79dc0f7",
+    "question": "3、您能修饰自己吗？",
+    "answers": [
+      {
+        "choiceid": "197837a7-8fa7-3274-bb41-b26d0c603926",
+        "choice": "可自己独立完成洗脸、刷牙、梳头、刮脸等。",
+        "mark": 5.0
+      },
+      {
+        "choiceid": "50e3ac87-048d-3c2d-8237-3f2bf26a609f",
+        "choice": "需他人帮助。",
+        "mark": 0.0
+      }
+    ]
+  },
+  {
+    "questionid": "24075675-98ae-354e-89ca-0126a9ad36e3",
+    "question": "4、您能够自己穿衣吗？",
+    "answers": [
+      {
+        "choiceid": "3c40931c-0c14-393e-844d-ca59450f4381",
+        "choice": "可独立完成穿（脱衣服）、系扣子、拉拉链、穿（脱）鞋袜、系鞋带等。",
+        "mark": 10.0
+      },
+      {
+        "choiceid": "2c05cbcc-2a55-3373-b3a9-abc31a807046",
+        "choice": "需部分帮助。",
+        "mark": 5.0
+      },
+      {
+        "choiceid": "54357a2f-ebcc-3ba3-87fd-2dc17cf0174d",
+        "choice": "需极大帮助或完全依赖他人。",
+        "mark": 0.0
+      }
+    ]
+  },
+  {
+    "questionid": "fc72beeb-f790-36ee-a73d-33888c9d8880",
+    "question": "5、您的能控制小便吗？",
+    "answers": [
+      {
+        "choiceid": "2c17d1af-b9ab-3691-bebc-cf63ff6bb75c",
+        "choice": "可控制大便。",
+        "mark": 10.0
+      },
+      {
+        "choiceid": "80b63751-7305-3f9b-a85a-5862f8586f89",
+        "choice": "偶尔失控，或需要他人提示。",
+        "mark": 5.0
+      },
+      {
+        "choiceid": "ecbc61f0-085b-3084-8dbf-990c3facac91",
+        "choice": "完全失控。",
+        "mark": 0.0
+      }
+    ]
+  },
+  {
+    "questionid": "115ff52f-d605-3b4b-98fe-c0ea57f4930c",
+    "question": "6、您的能控制大便吗？",
+    "answers": [
+      {
+        "choiceid": "37a8414a-f586-3b9c-8675-9cf41378eb52",
+        "choice": "可控制小便。",
+        "mark": 10.0
+      },
+      {
+        "choiceid": "bbe38cb2-080e-3f81-a964-45a425a72cab",
+        "choice": "偶尔失控，或需要他人提示。",
+        "mark": 5.0
+      },
+      {
+        "choiceid": "ab4dc6c2-370b-3a3c-a5f9-32c2fbc22489",
+        "choice": "完全失控，或留置导尿管。",
+        "mark": 0.0
+      }
+    ]
+  },
+  {
+    "questionid": "a4715ee0-524a-37cc-beb2-a0b5030757b7",
+    "question": "7、您的如厕能力如何？",
+    "answers": [
+      {
+        "choiceid": "99e8df54-82d4-357d-b0f6-00fb4bcc7f9e",
+        "choice": "可独立完成去厕所、解开衣裤、擦净、整理衣裤、冲水等过程。",
+        "mark": 10.0
+      },
+      {
+        "choiceid": "2609e6cf-f582-3d3f-a638-b287a0b90491",
+        "choice": "需部分帮助。",
+        "mark": 5.0
+      },
+      {
+        "choiceid": "fdac14b0-cc51-320d-9b4a-f0f9b822cbbf",
+        "choice": "需极大帮助或完全依赖他人。",
+        "mark": 0.0
+      }
+    ]
+  },
+  {
+    "questionid": "3d234b88-8d6f-319a-91ea-edb6059fc825",
+    "question": "8、您能床椅转椅吗？",
+    "answers": [
+      {
+        "choiceid": "038e6238-8c65-393d-9b35-324125f090ee",
+        "choice": "可独立完成",
+        "mark": 15.0
+      },
+      {
+        "choiceid": "d0299ad9-d3a4-3002-ae86-b89e4e6be9e8",
+        "choice": "需部分帮助。",
+        "mark": 10.0
+      },
+      {
+        "choiceid": "7df04ac3-99d1-3992-831b-5937856e68f2",
+        "choice": "需极大帮助。",
+        "mark": 5.0
+      },
+      {
+        "choiceid": "a83e6786-31fc-3d37-a690-742bcc6f062d",
+        "choice": "完全依赖他人。",
+        "mark": 0.0
+      }
+    ]
+  },
+  {
+    "questionid": "8762be68-de95-391a-94a0-c5fd0446e037",
+    "question": "9、您能平地行走吗？",
+    "answers": [
+      {
+        "choiceid": "986f6470-d636-32a6-88bf-95d6824d7e26",
+        "choice": "可独立在平地上行走45m。",
+        "mark": 15.0
+      },
+      {
+        "choiceid": "d4762aa4-6cb4-3b41-87a5-a5cf8bb1dd44",
+        "choice": "需部分帮助。",
+        "mark": 10.0
+      },
+      {
+        "choiceid": "baacc1ac-98c6-305c-aded-545e49e03722",
+        "choice": "需极大帮助。",
+        "mark": 5.0
+      },
+      {
+        "choiceid": "c76e89de-c644-33e7-842f-0795aed5b72f",
+        "choice": "完全依赖他人。",
+        "mark": 0.0
+      }
+    ]
+  },
+  {
+    "questionid": "9ee72491-59c4-333c-bb93-fe733a842fdb",
+    "question": "10、您能上下楼梯吗？",
+    "answers": [
+      {
+        "choiceid": "70906340-f197-3378-8549-ef3e48303f08",
+        "choice": "可独立上下楼梯",
+        "mark": 10.0
+      },
+      {
+        "choiceid": "16934bb7-8414-39d5-9bcc-dfc27dd68b77",
+        "choice": "需部分帮助。",
+        "mark": 5.0
+      },
+      {
+        "choiceid": "60507d64-43c9-37db-9e9f-05182a737e4c",
+        "choice": "需极大帮助或完全依赖他人。",
+        "mark": 0.0
+      }
+    ]
+  },
+  {
+    "questionid": "f1eabf56-d810-32ca-a104-a533583fe2c0",
+    "question": "关于进餐：使用餐具将饭菜送入口、咀嚼、吞咽等活动",
+    "answers": [
+      {
+        "choiceid": "8e785280-cfe6-3b92-a827-904d53b82204",
+        "choice": "独立完成",
+        "mark": 0.0
+      },
+      {
+        "choiceid": "37b50b4f-26ce-3574-849b-45ca199ddc67",
+        "choice": "需要协助，如切碎、搅拌食物等",
+        "mark": 3.0
+      },
+      {
+        "choiceid": "b63f023f-d4ed-3c1a-9755-23fd81f1ceb2",
+        "choice": "完全需要帮助",
+        "mark": 5.0
+      }
+    ]
+  },
+  {
+    "questionid": "74a24f13-481a-3656-bc2e-6daf31d32f0f",
+    "question": "关于梳洗：梳头、洗脸、刷牙、剃须、洗澡等活动",
+    "answers": [
+      {
+        "choiceid": "ea06ef16-0676-34b6-8caa-8b8b0d5e7f4c",
+        "choice": "独立完成",
+        "mark": 0.0
+      },
+      {
+        "choiceid": "c3bce056-5e16-3066-87cd-f6a6e81ae7d5",
+        "choice": "能独立地洗头、梳头、洗脸、刷牙、剃须等；洗澡需要协助",
+        "mark": 1.0
+      },
+      {
+        "choiceid": "af5fe11e-3800-3eb3-a704-55f08e6bc3c6",
+        "choice": "在协助下和适当的时间内，能完成部分梳洗活动",
+        "mark": 3.0
+      },
+      {
+        "choiceid": "83bb824b-9cf6-3699-9520-81d007bb8a32",
+        "choice": "完全需要帮助",
+        "mark": 7.0
+      }
+    ]
+  },
+  {
+    "questionid": "c5b06765-ae4d-32b4-995c-7c8c418af9e7",
+    "question": "关于穿衣：穿衣裤、袜子、鞋子等活动",
+    "answers": [
+      {
+        "choiceid": "5d3eb899-0844-32b8-ba0d-db460a78d140",
+        "choice": "独立完成",
+        "mark": 0.0
+      },
+      {
+        "choiceid": "28136690-6c0f-34be-bd9e-cf653363b095",
+        "choice": "需要协助，在适当的时间内完成部分穿衣",
+        "mark": 3.0
+      },
+      {
+        "choiceid": "a2f21d58-c1cf-368c-9128-318d8a4d19b6",
+        "choice": "完全需要帮助",
+        "mark": 5.0
+      }
+    ]
+  },
+  {
+    "questionid": "e2b2623a-44f1-3964-a02e-e25226696d9c",
+    "question": "关于如厕：小便、大便等活动及自控",
+    "answers": [
+      {
+        "choiceid": "a5f1bed3-1a52-3116-a47d-8c27347e1a8c",
+        "choice": "不需协助，可自控",
+        "mark": 0.0
+      },
+      {
+        "choiceid": "91b54ac8-1361-3929-9a9b-5c10cbc69eff",
+        "choice": "偶尔失禁，但基本上能如厕或使用便具",
+        "mark": 1.0
+      },
+      {
+        "choiceid": "eca6be99-556c-3a18-bdc4-8c8779e731d1",
+        "choice": "经常失禁，在很多提示和协助下尚能如厕或使用便具",
+        "mark": 5.0
+      },
+      {
+        "choiceid": "8ae6be58-8307-3d95-8a23-f79c3a2996c1",
+        "choice": "完全失禁，完全需要帮助",
+        "mark": 10.0
+      }
+    ]
+  },
+  {
+    "questionid": "aaf23f69-55c2-3ab9-97b0-8634c8c7201b",
+    "question": "关于活动：站立、室内行走、上下楼梯、户外活动",
+    "answers": [
+      {
+        "choiceid": "4e574edf-f508-3fb8-90ef-232d190734d6",
+        "choice": "独立完成所有活动",
+        "mark": 0.0
+      },
+      {
+        "choiceid": "979169aa-123c-3f22-a975-91336d46e5a3",
+        "choice": "借助较小的外力或辅助装臵能完成站立、行走、上下楼梯等",
+        "mark": 1.0
+      },
+      {
+        "choiceid": "3f919e15-4263-37bb-a3f8-95d37c2b6f36",
+        "choice": "借助较大的外力才能完成站立、行走，不能上下楼梯",
+        "mark": 5.0
+      },
+      {
+        "choiceid": "935a38e7-c91c-30c3-93ff-055133f5b95e",
+        "choice": "卧床不起，活动完全需要帮助",
+        "mark": 10.0
+      }
+    ]
+  }
+]

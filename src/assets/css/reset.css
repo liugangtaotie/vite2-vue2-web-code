@@ -1,0 +1,432 @@
+body,
+html {
+  height: 100%;
+  font-family: MicrosoftYaHei;
+  font-size: 14px;
+  color: #333;
+  background: #fff;
+  overflow-x: hidden;
+  /* background: #EBEDF2; */
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: #73b9fa;
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+#app {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+}
+
+.clear {
+  overflow: hidden;
+  clear: both;
+}
+
+.clearfix::after {
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+  content: ".";
+}
+
+.hd {
+  min-width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.position {
+  padding: 10px;
+  background: #ebeff0;
+}
+
+.login-box {
+  width: 800px;
+  padding: 60px 80px;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.05);
+}
+
+.login-title {
+  margin-bottom: 20px;
+  font-size: 2em;
+  font-weight: normal;
+}
+
+.login-content {
+  width: 400px;
+  margin: 40px auto;
+}
+
+.ivu-layout {
+  background: #f4f4f4;
+}
+
+.ivu-layout-header {
+  height: auto;
+  padding: 0;
+  line-height: inherit;
+}
+
+.color-gray {
+  color: #999;
+}
+
+.color-pramary {
+  color: #4285f4;
+
+}
+
+.f12 {
+  font-size: 12px;
+}
+
+.f14 {
+  font-size: 14px;
+}
+
+.f16 {
+  font-size: 16px;
+}
+
+.f18 {
+  font-size: 18px;
+}
+
+.f20 {
+  font-size: 20px;
+}
+
+.f36 {
+  font-size: 3em;
+}
+
+.fr {
+  float: right;
+}
+
+.fl {
+  float: left;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.full-width {
+  width: 100% !important;
+}
+
+.v-middle {
+  vertical-align: middle;
+}
+
+.re {
+  position: relative;
+}
+
+/* 用于边距 */
+.mt5 {
+  margin-top: 5px;
+}
+
+.m10 {
+  margin: 10px;
+}
+
+.m20 {
+  margin: 20px;
+}
+
+.mt10 {
+  margin-top: 10px;
+}
+
+.mt20 {
+  margin-top: 20px;
+}
+
+.mt30 {
+  margin-top: 30px;
+}
+
+.mr10 {
+  margin-right: 10px;
+}
+
+.mr20 {
+  margin-right: 20px;
+}
+
+.mr30 {
+  margin-right: 30px;
+}
+
+.mr60 {
+  margin-right: 60px;
+}
+
+.mb10 {
+  margin-bottom: 10px;
+}
+
+.mb20 {
+  margin-bottom: 20px;
+}
+
+.ml10 {
+  margin-left: 10px;
+}
+
+.ml20 {
+  margin-left: 20px;
+}
+
+.pd10 {
+  padding: 10px;
+}
+
+.pd20 {
+  padding: 20px 20px 0 20px;
+}
+
+.pl10 {
+  padding-left: 10px;
+}
+
+.pb10 {
+  padding-bottom: 10px;
+}
+
+.pl20 {
+  padding-left: 20px;
+}
+
+.pl30 {
+  padding-left: 30px;
+}
+
+.pr10 {
+  padding-right: 10px;
+}
+
+.pr20 {
+  padding-right: 20px;
+}
+
+.pr30 {
+  padding-right: 30px;
+}
+
+.bb1 {
+  border-right: 1px solid #f2f2f2;
+}
+
+.common-title {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.common-title .inner {
+  padding-left: 10px;
+  font-size: 1.4em;
+  text-align: left;
+  border-left: 4px solid #409eff;
+}
+
+.common-title .inner-right {
+  position: absolute;
+  top: 4px;
+  right: 0;
+}
+
+.red {
+  color: #f00;
+}
+
+.no-data {
+  text-align: center;
+}
+
+.color-success {
+  color: #85ce61;
+}
+
+.color-primary {
+  color: #409EFF;
+}
+
+
+.color-info {
+  color: #999;
+}
+
+.lh20 {
+  line-height: 20px;
+}
+
+.textleft {
+  text-align: left;
+}
+
+.textcenter {
+  text-align: center;
+}
+
+/* table全局样式 */
+.el-table__body,
+.el-table__footer,
+.el-table__header {
+  width: 100%;
+}
+
+.el-table th {
+  color: #333 !important;
+  background: #EBF4FF !important;
+  font-size: 14px;
+}
+
+/* .el-tooltip__popper {
+  width: 400px !important;
+} */
+
+.el-button {
+  padding: 10px 20px !important;
+  font-size: 14px;
+}
+
+/* Recommended css code for vue-svgicon */
+.svg-icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  color: inherit;
+  fill: none;
+  stroke: currentColor;
+  vertical-align: -0.15em;
+}
+
+.svg-fill {
+  fill: currentColor;
+  stroke: none;
+}
+
+.svg-up {
+  transform: rotate(0deg);
+}
+
+.svg-right {
+  transform: rotate(90deg);
+}
+
+.svg-down {
+  transform: rotate(180deg);
+}
+
+.svg-left {
+  transform: rotate(-90deg);
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.pointer {
+  cursor: pointer
+}
+
+ /* 设置表格样式 */
+.el-table td, .el-table th {
+  padding: 9px 0!important;
+  
+}
+.el-table__body,.el-table__header {
+  border: 1px solid #C2CCDE;
+
+}
+.el-table__header {
+  border-bottom: none!important;
+}
+
+.fullOf {
+  height: 100%;
+  overflow-y: auto;
+  font-size: 14px;
+}
+
+.bgwhite {
+  background: #fff;
+}
+
+
+/* 选择框样式 */
+
+.el-select-dropdown__list {
+  padding: 0 !important;
+}
+
+.option-sel-item {
+  text-align: center !important;
+}
+
+.el-select-dropdown__item {
+  text-align: center !important;
+}
+
+.el-select-dropdown__item.selected {
+  font-weight: bold !important;
+  color: #333 !important;
+  background: #d7efff !important;
+}
+
+.el-input--mini .el-input__inner {
+  height: 32px;
+  line-height: 32px;
+  font-size: 14px;
+}
+
+.select-org-dept .el-input__inner {
+  padding-left: 0;
+  text-align: left;
+  border: none !important;
+}
+
+.el-button--primary {
+  background: #4088FE;
+  color: #fff !important;
+}
+
+.table .el-button {
+  /* width: 48px; */
+  padding: 0 10px !important;
+  height: 28px;
+  font-size: 14px;
+  color: #4088fe;
+  border: 1px solid #4088fe;
+  border-radius: 4px;
+}
+

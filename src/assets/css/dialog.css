@@ -1,0 +1,75 @@
+/*
+	For Hints
+*/
+.el-dialog {
+  border-radius: 20px !important;
+}
+
+.ele-dialog .el-dialog {
+  top: 20vh;
+  width: 30%;
+}
+
+.el-dialog__headerbtn .el-dialog__close {
+  font-size: 20px;
+}
+
+.ele-dialog .el-dialog .tip-msg {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.ele-dialog .el-dialog .tip-msg i {
+  font-size: 14px;
+  color: #f00;
+}
+
+.els-dialog .el-dialog__header span {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.ele-dialog .el-dialog .el-dialog__footer button:first-child {
+  margin-right: 50px;
+}
+
+
+/*
+	For The Form Section
+*/
+.els-dialog .el-dialog {
+  width: 50%;
+
+  /* top: 5vh; */
+}
+
+.el-dialog__body {
+  padding: 10px 20px !important;
+}
+
+.els-dialog .el-dialog .el-form .el-form-item .el-form-item__label {
+  width: 22%;
+}
+
+.els-dialog .el-dialog .el-form .el-form-item .el-form-item__content {
+  float: left;
+  width: 70%;
+}
+
+.els-dialog .el-dialog .el-form .el-dialog__footer {
+  text-align: center;
+}
+
+.els-dialog .el-dialog .el-form .el-dialog__footer button:first-child {
+  margin-right: 50px;
+}
+
+.els-dialog .el-dialog__footer {
+  text-align: center;
+}
+
+.els-dialog .el-dialog__footer .el-button:last-child {
+  margin-left: 80px;
+}

@@ -1,0 +1,27 @@
+/* 匹配项 */
+.matching-item {
+  position: relative;
+}
+
+.matching-item i {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  margin-top: -10px;
+  font-size: 20px;
+}
+
+i.is-matching {
+  color: #00c484;
+}
+
+i.not-matching {
+  color: #f00;
+}
+
+/* 用法 */
+
+/*
+    parant:  class="matching-item"
+    <i :class="[{'el-icon-circle-check-outline':doctorLib.name==personInfo.name},{'el-icon-circle-close-outline':doctorLib.name!=personInfo.name},{'is-matching':doctorLib.name==personInfo.name},{'not-matching':doctorLib.name!=personInfo.name}]"></i>
+*/

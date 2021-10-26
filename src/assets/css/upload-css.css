@@ -1,0 +1,43 @@
+#bs-upload .v-modal {
+  z-index: 2099;
+}
+
+#bs-upload .el-upload--picture-card {
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+#bs-upload .el-upload--picture-card .el-icon-upload {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  margin: -20px 0 0 -20px;
+  font-size: 40px;
+}
+
+#bs-upload .el-upload-list--picture-card .el-upload-list__item {
+  width: 80px;
+  height: 80px;
+}
+
+#bs-upload .el-dialog {
+  width: 50%;
+  height: 500px;
+  border: 1px dashed #ccc;
+  border-radius: 20px;
+}
+
+#bs-upload .el-dialog .el-dialog__body {
+  padding: 5px 20px 10px;
+}
+
+#bs-upload .el-dialog img {
+  height: 440px;
+}
+
+#elep-dialogs .el-dialog {
+  border-radius: 1.4rem;
+}

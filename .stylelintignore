@@ -1,0 +1,8 @@
+/dist/
+/build/
+/config/
+vue.config.js
+/static/
+/node_modules/
+/src/assets/css/*
+
