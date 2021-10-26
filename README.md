@@ -189,35 +189,3 @@ online: npm run build:production / make pro
 }
 
 ```
-
-### 八、打包流程解析以及对应的jenkins/rancher
-
-
-``` bash
-1、打包流程解析
-
-A、当前分支的源代码：yarn build  生成dist 文件;
-
-B、需要另外一个项目：https://jkcs.bsoft.com.cn/bs-standard-repo/fore-end/pc/bs-health-web-dist ;
-
-C、将 A生成 dist 目录 拷贝到 B项目中去
-
-2、打包对应jenkins/rancher
-
-开发环境：（开发、质控用一个jenkins）
-        jenkins->http://jenkins.atag.bsoft.com.cn/
-        项目名称：hc-admin-dist-3.2
-
-        Rancher->http://rancher.atag.bsoft.com.cn/ 
-        项目名称：admin-dist
-
-       
-质控环境：
-        jenkins->http://jenkins.atag.bsoft.com.cn/
-        项目名称：hc-admin-dist-3.3.04-zk
-
-        Rancher->http://rancher.zk.atag.bsoft.com.cn/ 
-        项目名称：admin-dist
-
-       
-```
