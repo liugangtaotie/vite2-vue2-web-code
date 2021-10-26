@@ -11,7 +11,7 @@
     "svg": "vsvg -s ./src/icons/svg -t ./src/icons/components --ext ts --es6",
     "analyz": "NODE_ENV=production npm_config_report=true npm run build",
     "autofix": "eslint --fix --ext .js,.vue,.ts src",
-    "stylelint": "stylelint src/**/**/**/**/*.{html,vue,css,sass,scss} --fix"
+    "stylelint": "stylelint src/**/**/**/**/*.{html,vue,css,sass,scss,less} --fix"
   },
   "dependencies": {
     "@antv/g2": "^4.0.12",
@@ -136,7 +136,7 @@
     "*.{js,ts,vue}": [
       "yarn autofix"
     ],
-    "*.{html,vue,css,sass,scss}": [
+    "*.{html,vue,css,sass,scss,less}": [
       "yarn stylelint"
     ]
   }
