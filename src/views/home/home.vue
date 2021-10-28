@@ -34,9 +34,9 @@ export default {
       currentItem: {},
       current: "",
       sparamstr: {
-        // accessToken: "6a1a2c74-b73d-42a3-81e2-d130b96fbaff", // 方洪全 - dev
-        accessToken: "0d92c110-aada-4005-9e14-4361c13f6e96", // 方洪全 - zk
-        // accessToken: '279d0456-bea0-408e-bb0a-a9e0d9ebc9ad' // admin'
+        // accessToken: "xxxx", // xx - dev
+        accessToken: "xxxx", // xx - zk
+        // accessToken: 'xxx' // admin'
       },
       list: [
         {

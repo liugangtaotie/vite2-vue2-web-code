@@ -342,54 +342,6 @@ const comAxios = (XID: any, MTD: any, PAM: any) => {
     });
 };
 
-// 日志保存(AJAX)
-const logSaveAxios = (PAM:any) => {
-  // console.log(1111)
-  // logType: 0 异常/1-登录/2-登出/a-添加/d-删除/u-更新/s-查询/A-批量添加/D-批量删除/U-批量更新/I-调用接口
-  // logModuleName: 登录（SYS_LOGIN）、登出（SYS_LOGIN_OUT） 在线问诊(CONSULT_ASK)、
-  // 复诊配药(RETURN_VISIT)、处方审核(REVIEW_AUDIT)、健康档案(HEALTH_DOC)、
-  // 居民(BASE_USER)、随访患者管理(FOLLOWUP_PATIENT)、随访计划(FOLLOWUP_PLAN)、
-  // 满意度调查(SATIFACTION_SURVEY)
-  const userMsg = JSON.parse(localStorage.userMsg || "{}")
-  const orgDoctor = JSON.parse(sessionStorage.getItem("orgDoctor") || "{}")
-
-  const constPam = [{
-    logCractUnid:userMsg.userId,
-    logCractUname:userMsg.userName,
-    logDoctorCode: orgDoctor && orgDoctor.localDoctorId,
-    logClentOS:userMsg.lastUserAgent,
-    logIp:userMsg.currentIpAddress,
-    logMACAddress: "",
-    ...JSON.parse(PAM),
-  }]
-  const loadInterface = Loading.service({
-    fullscreen: true,
-    text: "数据处理中···",
-  });
-  const instance = axios.create({
-    headers: {
-      "X-Access-Token": sessionStorage.getItem("accessToken"),
-      "X-Service-Id": 'cmc.sysLog',
-      "X-Service-Method": 'saveLog',
-      "Content-Type": "application/json",
-      "sign": getSign(constPam),
-      "timestamp": requestTime
-    },
-  });
-  instance.interceptors.response.use(responseInterceptors);
-   // 入参加密 开发环境可以将此注释
-   const paramsSM4 = appConfig.encryFlag ? { data: encryptSm4(constPam) } : constPam;
-  return instance
-    .post(`${ySing}/*.jsonRequest`, paramsSM4)
-    .then((res:any) => {
-      loadInterface.close();
-      return res.data;
-    })
-    .catch((err:any) => {
-      loadInterface.close();
-    });
-};
-
 // 常用通道(AJAX Async)
 const comAxion = (XID: any, MTD: any, PAM: any) => {
   // console.log(444)
@@ -454,33 +406,6 @@ const comAxios_drugImport = (ADS: any, PAM: any, XMD = "post") => {
       return res.data;
     })
     .catch((err: any) => {
-      // comTips("0", "处理失败，请稍后再试试～");
-    });
-};
-
-// 问诊导出
-const comAxiosClinicDowload = (ADS: any, PAM: any, XMD = "post") => {
-  const loadInterface = Loading.service({
-    fullscreen: true,
-    text: "数据处理中···",
-  });
-  setTimeout(() => {
-    loadInterface.close();
-  }, 10000);
-  const instance = axios.create({
-    headers: {
-      "Content-Type": "application/json",
-    },
-    responseType: "blob",
-  });
-  instance.interceptors.response.use(responseInterceptors);
-  return instance
-    .post(`${downSing}/${ADS}`, PAM)
-    .then((res:any) => {
-      loadInterface.close();
-      return res.data;
-    })
-    .catch((err:any) => {
       // comTips("0", "处理失败，请稍后再试试～");
     });
 };
@@ -796,12 +721,10 @@ export {
   convertToGd,
   convertToBd,
   comAxios,
-  logSaveAxios,
   comAxion,
   comAxios_dataImport,
   comAxios_Old,
   comAxios_drugImport,
-  comAxiosClinicDowload,
   comFiles,
   comDico,
   comTips,

@@ -119,9 +119,9 @@ export default defineConfig({
   css: {
     preprocessorOptions: {
       less: {
-        // modifyVars: {
-        //   hack: `true; @import "@ASS/css/theme.less";`,
-        // },
+        globalVars: {
+          hack: `true; @import "${path.join(__dirname, "./src/assets/css/theme.less")}"`,
+        },
       },
     },
   },

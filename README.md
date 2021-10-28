@@ -2,7 +2,7 @@
 
 [ 注意: 下面的说明仅供参考,会由于项目变更而发生变化,请随时保持沟通! ]()
 
-[gitlab - 源码](http://jkcs.bsoft.com.cn/bs-standard-repo/fore-end/pc/version_manager.git)
+[gitlab - 源码](https://github.com/liugangtaotie/vite2-vue2-web-code)
 
 ## 二、Build Setup(本地开发)
 
@@ -13,14 +13,10 @@ npm install && yarn
 # 本地调试
 npm run dev && yarn dev
 windows 用户
-先执行 npm run build:dll(建立vendor-json,动态链接,加快打包速度)
-生成 vendor_dll_xxx.js 文件，然后 在index.html中script引入vendor_dll_xxx.js文件
 再执行 npm run serve / yarn serve(开发)
 npm run build:production(打包)
 
 mac 用户
-先执行 make dll(建立vendor-json,动态链接,加快打包速度)
-生成 vendor_dll_xxx.js 文件，然后 在index.html中script引入vendor_dll_xxx.js文件
 再执行 make dev(开发)
 make pro(打包)
 
@@ -41,15 +37,6 @@ online: npm run build:production / make pro
 
 ```
 |-- root
-    |-- build
-    |   |-- vendor-manifest.json()
-    |   |-- webpack.base.conf.js
-    |   |-- webpack.dev.conf.js (开发环境打包配置)
-    |   |-- webpack.dll.conf.js （生成dll动态链接库）
-    |   |-- webpack.pro.conf.js（生产环境打包配置）
-    |-- config
-    |-- ops(自动化部署脚本,目前正在用的)
-    |-- ops7.6(自动化部署脚本)
     |-- src
     |   |-- api
     |   |   |-- util.ts（公共方法）
@@ -77,10 +64,9 @@ online: npm run build:production / make pro
     |-- .babel.config.js
     |-- CHANGELOG.md（更改日志）
     |-- codeSpecification.md（代码规范）
-    |-- cypress.json
     |-- deploy.sh（mac快速发布脚本）
     |-- git.sh（mac自动提交脚本）
-    |-- index.html
+    |-- index.html(入口文件)
     |-- jest.config.js
     |-- Makefile(mac快速开启项目)
     |-- package-lock.json
@@ -94,23 +80,7 @@ online: npm run build:production / make pro
 
 查看codeSpecification.md文档
 
-## 五、前端打包webpack配置信息一览
-
-核心一点就是： cmd 中敲 vue inspect > output.js , 这样我们会得到一份最终生效的 webpack 配置信息
-
-## 六、常见问题
-
-``` bash
-1、如果出现内存溢出，需要修改vue.config.js->148行： 这个地方改成4096
-           let allowUseMem = totalmem > 2048 ? 8192 : 2048;
-           -> let allowUseMem = totalmem > 2048 ? 4096 : 2048;
-
-2、如果本地开发： 可以注掉一些不相关的路由， 这样本地运行就很快了， 记得打包把它还原回去；
-
-3、本地打包： 一般执行完dll后，打包30s；mac 一般打包时间（20s）
-```
-
-## 七、vs code setting(统一编码风格)
+## 五、vs code setting(统一编码风格)
 ```
 {
   "remote.SSH.showLoginTerminal": true,

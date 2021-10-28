@@ -349,9 +349,7 @@ export default {
 };
 </script>
 
-<style scoped lang="scss">
-@import "static/activeCss/theme_color.scss";
-
+<style lang="less" scoped>
 .el-tree {
   position: relative;
 }
@@ -382,7 +380,7 @@ export default {
 }
 
 .item:hover {
-  color: $--color-primary;
+  color: @bs-color-primary;
   background: #eee;
   border-color: #fff;
 }
@@ -398,37 +396,37 @@ export default {
   color: #5fa2dd;
 }
 </style>
-<style lang="scss">
+<style lang="less">
 // 小图标的颜色
-$tree-icon-color: #008ef3;
+@tree-icon-color: #008ef3;
 //  字体的颜色
-$tree-font-color: #8f8f8f;
+@tree-font-color: #8f8f8f;
 
 // 是否有expanded决定树结构是否展开
 // is-leaf决定是否还会有子元素
 .el-tree-node__label {
   font-family: element-icons !important;
-  color: $tree-font-color;
+  color: @tree-font-color;
 }
 
 // 文件夹图标的配置
 .el-tree-node__expand-icon:not(.is-leaf) + .el-tree-node__label::before {
   padding-right: 5px;
-  color: $tree-icon-color;
+  color: @tree-icon-color;
   content: "\e784";
 }
 
 // 纸张图标的配置
 .is-leaf + .el-tree-node__label::before {
   padding-right: 5px;
-  color: $tree-icon-color;
+  color: @tree-icon-color;
   content: "\e789";
 }
 
 //  未展开树的图标
 .el-tree-node__expand-icon:not(.expanded):not(.is-leaf)::before {
   color: white;
-  background-color: $tree-icon-color;
+  background-color: @tree-icon-color;
   border-radius: 3px;
   content: "\e6d9";
 }
@@ -436,7 +434,7 @@ $tree-font-color: #8f8f8f;
 //  已展开树的图标
 .expanded::before {
   color: white;
-  background-color: $tree-icon-color;
+  background-color: @tree-icon-color;
   border-radius: 3px;
   content: "\e6d8" !important;
 }
