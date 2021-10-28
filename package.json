@@ -11,7 +11,7 @@
     "svg": "vsvg -s ./src/icons/svg -t ./src/icons/components --ext ts --es6",
     "analyz": "NODE_ENV=production npm_config_report=true npm run build",
     "autofix": "eslint --fix --ext .js,.vue,.ts src",
-    "stylelint": "stylelint src/**/**/**/**/*.{html,vue,css,sass,scss,less} --fix"
+    "stylelint": "stylelint src/**/**/**/**/*.{html,vue,css,less} --fix"
   },
   "dependencies": {
     "@antv/g2": "^4.0.12",
@@ -75,7 +75,6 @@
     "register-service-worker": "^1.7.1",
     "rimraf": "^3.0.2",
     "rollup-plugin-copy": "^3.4.0",
-    "sass": "^1.32.12",
     "semver": "^7.3.2",
     "shelljs": "^0.8.4",
     "sm-crypto": "^0.2.7",
@@ -133,7 +132,7 @@
     "*.{js,ts,vue}": [
       "yarn autofix"
     ],
-    "*.{html,vue,css,sass,scss,less}": [
+    "*.{html,vue,css,less}": [
       "yarn stylelint"
     ]
   }
