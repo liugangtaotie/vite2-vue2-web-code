@@ -73,7 +73,7 @@ online: npm run build:production / make pro
     |-- package.json
     |-- README.md
     |-- tsconfig.json
-    |-- vue.config.js(vue 基本配置)
+    |-- vite.config.js(vite 基本配置)
     |-- yarn.lock
 ```
 ## 四、前端代码编写规范
