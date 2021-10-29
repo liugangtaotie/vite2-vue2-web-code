@@ -11,7 +11,6 @@ import "nprogress/nprogress.css";
 import 'element-ui/lib/theme-chalk/index.css';
 import "./assets/css/flex.css";
 import "./assets/css/reset.css";
-import { comAxios, comTips, convertStr } from "./api/api";
 import preview from "vue-photo-preview";
 import "vue-photo-preview/dist/skin.css";
 import "vue-photo-preview/dist/vue-photo-preview";
