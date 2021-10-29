@@ -13,18 +13,9 @@ import { Component, Vue } from "vue-property-decorator";
   name: "App",
 })
 export default class App extends Vue {
-  // mixins: [eventMixin],
   private isFirst: Boolean = true;
 
-  updated() {
-    // if (this.isFirst) {
-    //   var elementMain: any = document.getElementById("__mainLoading");
-    //   if (elementMain) {
-    //     elementMain.outerHTML = "";
-    //   }
-    //   this.isFirst = false;
-    // }
-  }
+  updated() {}
 
   created() {}
 }
