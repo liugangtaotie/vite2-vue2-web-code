@@ -33,9 +33,9 @@ export function filterAskMode(type) {
     return "";
   }
   let obj = {
-    imageAble: "图文问诊",
-    telephone: "电话问诊",
-    video: "视频问诊",
+    imageAble: "图文xx",
+    telephone: "电话xx",
+    video: "视频xx",
     returnVisit: "复诊配药",
     assistClinic: "协同门诊",
   };
@@ -149,31 +149,31 @@ export function filterLogType(s) {
 // 互联网诊疗 (路由)
 export const filterUrl = {
   filterOnlineConsult: (s) => {
-    switch(s) {
+    switch (s) {
       // 排班设置--排班管理
-      case 'workforceList':
-        return '/cloudClinicManage/workforceManagement/workforceList';
+      case "workforceList":
+        return "/cloudClinicManage/workforceManagement/workforceList";
       //  排班设置--设置
-      case 'workforceParameters':
-        return '/cloudClinicManage/workforceManagement/workforceParameters';
+      case "workforceParameters":
+        return "/cloudClinicManage/workforceManagement/workforceParameters";
       // 患者列表
-      case 'patientList':
-        return '/cloudClinicManage/patientList';
+      case "patientList":
+        return "/cloudClinicManage/patientList";
       // 云诊室-历史记录
-      case 'history':
-        return '/cloudClinicManage/history';
+      case "history":
+        return "/cloudClinicManage/history";
       // 处方审核查询
-      case 'reviewQuery':
-        return '/cloudClinicManage/reviewQuery';
+      case "reviewQuery":
+        return "/cloudClinicManage/reviewQuery";
       // 发起预约
-      case 'start':
-        return '/collaborativeClinic/start';
+      case "start":
+        return "/collaborativeClinic/start";
       // 预约列表
-      case 'appointList':
-        return '/collaborativeClinic/appointList';
+      case "appointList":
+        return "/collaborativeClinic/appointList";
       // 协同门诊-历史记录
-      case 'historyList':
-        return '/collaborativeClinic/historyList';
+      case "historyList":
+        return "/collaborativeClinic/historyList";
     }
-  }
-}
+  },
+};

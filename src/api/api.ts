@@ -127,7 +127,7 @@ function encryptSm4(param: any) {
 
 }
 
-// 问诊记录导出
+// xx记录导出
 const BS_exportConsult = () => {
   return appConfig.exportConsult;
 };

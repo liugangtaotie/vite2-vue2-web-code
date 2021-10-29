@@ -8,7 +8,6 @@ import NProgress from "nprogress";
 import TreeSelect from "@riophae/vue-treeselect";
 import "@riophae/vue-treeselect/dist/vue-treeselect.css";
 import "nprogress/nprogress.css";
-// import "./assets/css/common-css.css";
 import 'element-ui/lib/theme-chalk/index.css';
 import "./assets/css/flex.css";
 import "./assets/css/reset.css";
@@ -16,8 +15,6 @@ import { comAxios, comTips, convertStr } from "./api/api";
 import preview from "vue-photo-preview";
 import "vue-photo-preview/dist/skin.css";
 import "vue-photo-preview/dist/vue-photo-preview";
-// import Viewer from "v-viewer";
-// import "viewerjs/dist/viewer.css";
 import * as filters from "./assets/js/filters";
 
 import cfg from "./api/appConfig";
